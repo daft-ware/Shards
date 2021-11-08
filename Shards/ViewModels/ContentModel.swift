@@ -13,15 +13,21 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     var locationManager = CLLocationManager()
     
     override init() {
+        
+        // init method of NSObject
+        
         super.init()
+        
         
         // Set content model as the delegate of the location manager
         
         locationManager.delegate = self
         
+        
         // Request permission from the user
         
         locationManager.requestWhenInUseAuthorization()
+        
         
         // Start geolocating the user
         
