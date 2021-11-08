@@ -47,4 +47,14 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
             
         }
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        // Gives us the location of the user
+        
+        print(locations.first ?? "no location")
+        
+        // Stop requesting the location after we get it once
+        
+    }
 }
