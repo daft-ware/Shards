@@ -52,13 +52,21 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         
         // Gives us the location of the user
         
+        var userLocation = locations.first
+        
+        
         /* print that prints out the location passed, just for debugging
          
         print(locations.first ?? "no location")
          
         */
         
-        // Stop requesting the location after we get it once
         
+        if userLocation != nil {
+            
+            // Stop requesting the location after we get it once
+            
+            locationManager.stopUpdatingLocation()
+        }
     }
 }

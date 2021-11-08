@@ -68,7 +68,7 @@ struct HomeView: View {
                 Spacer()
                 Spacer()
                     
-                Button(action: {showingMapView.toggle(); notification = 0},
+                Button(action: {showingMapView .toggle(); notification = 0},
                        label: {
                             ZStack {
                                 Rectangle()
