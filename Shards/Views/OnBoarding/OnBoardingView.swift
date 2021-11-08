@@ -9,7 +9,23 @@ import SwiftUI
 
 struct OnBoardingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            gray.ignoresSafeArea()
+            
+            VStack {
+                Text("Hello, fellow cyclist?")
+                    .foregroundColor(black)
+                    .font(.system(size: screenSize.width / 15))
+                    .padding()
+                
+                Divider()
+                
+                Text("Probably, we hate shards.\nThat's why I made Shards!\nContradictory, but it works just fine")
+                    .foregroundColor(black)
+                    .font(.system(size: screenSize.width / 20))
+                    .padding()
+            }
+        }
     }
 }
 
