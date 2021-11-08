@@ -24,7 +24,7 @@ struct LaunchView: View {
         ZStack {
             white.ignoresSafeArea()
                     
-            Text("Done boiiisadfadsfasdfasdf")
+            Text("Done")
         }
     }
 }
