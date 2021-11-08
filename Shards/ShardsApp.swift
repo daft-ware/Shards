@@ -13,6 +13,8 @@ struct ShardsApp: App {
         WindowGroup {
             LaunchView()
                 .environmentObject(ContentModel())
+            HomeView()
+                .environmentObject(ContentModel())
         }
     }
 }

@@ -27,7 +27,9 @@ struct LaunchView: View {
         
         if model.authorizationState == .notDetermined {
             
-            // Not determined -> onboarding
+            // Not determined -> onboarding view (first time view)
+            
+            OnBoardingView()
             
         }
         
@@ -39,20 +41,9 @@ struct LaunchView: View {
         
         else {
             
+            DeniedView()
             
-            
-        }
-        
-        ZStack {
-            white.ignoresSafeArea()
-                    
-            Text("Done")
         }
     }
 }
 
-struct LaunchView_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchView()
-    }
-}

@@ -17,6 +17,8 @@
 		9019A0BF27393F8500E8997A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0BE27393F8500E8997A /* MapView.swift */; };
 		9019A0C127393FEE00E8997A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C027393FEE00E8997A /* HomeView.swift */; };
 		9019A0C327394F9600E8997A /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C227394F9600E8997A /* ContentModel.swift */; };
+		9019A0C827397F5D00E8997A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C727397F5D00E8997A /* OnBoardingView.swift */; };
+		9019A0CA27397F9400E8997A /* DeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C927397F9400E8997A /* DeniedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		9019A0BE27393F8500E8997A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9019A0C027393FEE00E8997A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9019A0C227394F9600E8997A /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		9019A0C727397F5D00E8997A /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		9019A0C927397F9400E8997A /* DeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeniedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			children = (
 				9019A0902739391700E8997A /* ShardsApp.swift */,
 				9019A0BA2739395D00E8997A /* Views */,
+				9019A0BE27393F8500E8997A /* MapView.swift */,
 				9019A0BD2739399B00E8997A /* ViewModels */,
 				9019A0BC2739397C00E8997A /* Models */,
 				9019A0962739391700E8997A /* Preview Content */,
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				9019A0922739391700E8997A /* LaunchView.swift */,
+				9019A0C727397F5D00E8997A /* OnBoardingView.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -171,7 +177,7 @@
 		9019A0C52739784900E8997A /* Denied */ = {
 			isa = PBXGroup;
 			children = (
-				9019A0BE27393F8500E8997A /* MapView.swift */,
+				9019A0C927397F9400E8997A /* DeniedView.swift */,
 			);
 			path = Denied;
 			sourceTree = "<group>";
@@ -316,7 +322,9 @@
 			files = (
 				9019A0932739391700E8997A /* LaunchView.swift in Sources */,
 				9019A0C127393FEE00E8997A /* HomeView.swift in Sources */,
+				9019A0CA27397F9400E8997A /* DeniedView.swift in Sources */,
 				9019A0C327394F9600E8997A /* ContentModel.swift in Sources */,
+				9019A0C827397F5D00E8997A /* OnBoardingView.swift in Sources */,
 				9019A0BF27393F8500E8997A /* MapView.swift in Sources */,
 				9019A0912739391700E8997A /* ShardsApp.swift in Sources */,
 			);
