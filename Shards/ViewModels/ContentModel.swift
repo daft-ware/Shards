@@ -27,10 +27,24 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         // Request permission from the user
         
         locationManager.requestWhenInUseAuthorization()
+    }
+    
+    // Location manager delegate methods
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         
+        if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
+            
+            // Permission granted, all good ->
+            // Start geolocating the user
+            
+            locationManager.startUpdatingLocation()
+        }
         
-        // Start geolocating the user
-        
-        locationManager.startUpdatingLocation()
+        else if locationManager.authorizationStatus == .denied {
+            
+            // We need permission in order for the app to work as intended
+            
+        }
     }
 }
