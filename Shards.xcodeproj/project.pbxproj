@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9019A0912739391700E8997A /* ShardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0902739391700E8997A /* ShardsApp.swift */; };
-		9019A0932739391700E8997A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0922739391700E8997A /* ContentView.swift */; };
+		9019A0932739391700E8997A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0922739391700E8997A /* LaunchView.swift */; };
 		9019A0952739391700E8997A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9019A0942739391700E8997A /* Assets.xcassets */; };
 		9019A0982739391700E8997A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9019A0972739391700E8997A /* Preview Assets.xcassets */; };
 		9019A0A22739391700E8997A /* ShardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0A12739391700E8997A /* ShardsTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		9019A08D2739391700E8997A /* Shards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9019A0902739391700E8997A /* ShardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShardsApp.swift; sourceTree = "<group>"; };
-		9019A0922739391700E8997A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9019A0922739391700E8997A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		9019A0942739391700E8997A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9019A0972739391700E8997A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9019A09D2739391700E8997A /* ShardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				9019A0902739391700E8997A /* ShardsApp.swift */,
-				9019A0922739391700E8997A /* ContentView.swift */,
+				9019A0BA2739395D00E8997A /* Views */,
+				9019A0BC2739397C00E8997A /* Models */,
 				9019A0942739391700E8997A /* Assets.xcassets */,
 				9019A0962739391700E8997A /* Preview Content */,
 			);
@@ -125,6 +126,29 @@
 				9019A0AD2739391700E8997A /* ShardsUITestsLaunchTests.swift */,
 			);
 			path = ShardsUITests;
+			sourceTree = "<group>";
+		};
+		9019A0BA2739395D00E8997A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9019A0922739391700E8997A /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9019A0BC2739397C00E8997A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9019A0BD2739399B00E8997A /* ViewModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9019A0BD2739399B00E8997A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9019A0932739391700E8997A /* ContentView.swift in Sources */,
+				9019A0932739391700E8997A /* LaunchView.swift in Sources */,
 				9019A0912739391700E8997A /* ShardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
