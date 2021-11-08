@@ -16,6 +16,7 @@
 		9019A0AE2739391700E8997A /* ShardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0AD2739391700E8997A /* ShardsUITestsLaunchTests.swift */; };
 		9019A0BF27393F8500E8997A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0BE27393F8500E8997A /* MapView.swift */; };
 		9019A0C127393FEE00E8997A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C027393FEE00E8997A /* HomeView.swift */; };
+		9019A0C327394F9600E8997A /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C227394F9600E8997A /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9019A0AD2739391700E8997A /* ShardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9019A0BE27393F8500E8997A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9019A0C027393FEE00E8997A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9019A0C227394F9600E8997A /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,8 @@
 			children = (
 				9019A0902739391700E8997A /* ShardsApp.swift */,
 				9019A0BA2739395D00E8997A /* Views */,
+				9019A0BD2739399B00E8997A /* ViewModels */,
 				9019A0BC2739397C00E8997A /* Models */,
-				9019A0942739391700E8997A /* Assets.xcassets */,
 				9019A0962739391700E8997A /* Preview Content */,
 			);
 			path = Shards;
@@ -145,7 +147,7 @@
 		9019A0BC2739397C00E8997A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9019A0BD2739399B00E8997A /* ViewModels */,
+				9019A0942739391700E8997A /* Assets.xcassets */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +155,7 @@
 		9019A0BD2739399B00E8997A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9019A0C227394F9600E8997A /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			files = (
 				9019A0932739391700E8997A /* LaunchView.swift in Sources */,
 				9019A0C127393FEE00E8997A /* HomeView.swift in Sources */,
+				9019A0C327394F9600E8997A /* ContentModel.swift in Sources */,
 				9019A0BF27393F8500E8997A /* MapView.swift in Sources */,
 				9019A0912739391700E8997A /* ShardsApp.swift in Sources */,
 			);
@@ -454,6 +458,7 @@
 				DEVELOPMENT_TEAM = H4NW3RCM58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grand permission to send your current location so it can be saved as \"place with shards\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,6 +488,7 @@
 				DEVELOPMENT_TEAM = H4NW3RCM58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grand permission to send your current location so it can be saved as \"place with shards\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
