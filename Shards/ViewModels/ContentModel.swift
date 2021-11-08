@@ -12,6 +12,9 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     var locationManager = CLLocationManager()
     
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    
+    
     override init() {
         
         // init method of NSObject
@@ -33,6 +36,11 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         
+        // Update the authorizationState var
+        
+        authorizationState = locationManager.authorizationStatus
+        
+        
         if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
             
             // Permission granted, all good ->
@@ -52,7 +60,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         
         // Gives us the location of the user
         
-        var userLocation = locations.first
+        let userLocation = locations.first
         
         
         /* print that prints out the location passed, just for debugging

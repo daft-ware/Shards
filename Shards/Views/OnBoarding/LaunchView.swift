@@ -20,7 +20,29 @@ public var black = Color(red: 0.04, green: 0, blue: 0)
 
 
 struct LaunchView: View {
+    
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
+        
+        if model.authorizationState == .notDetermined {
+            
+            // Not determined -> onboarding
+            
+        }
+        
+        else if model.authorizationState == .authorizedWhenInUse || model.authorizationState == .authorizedAlways {
+            
+            HomeView()
+            
+        }
+        
+        else {
+            
+            
+            
+        }
+        
         ZStack {
             white.ignoresSafeArea()
                     
