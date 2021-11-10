@@ -2,10 +2,11 @@
 //  MapView.swift
 //  Shards
 //
-//  Created by Rostislav Brož on 11/8/21.
+//  Created by Rostislav Brož on 11/10/21.
 //
 
 import SwiftUI
+import MapKit
 
 struct MapView: View {
     var body: some View {

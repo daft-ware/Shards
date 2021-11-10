@@ -14,12 +14,11 @@
 		9019A0A22739391700E8997A /* ShardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0A12739391700E8997A /* ShardsTests.swift */; };
 		9019A0AC2739391700E8997A /* ShardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0AB2739391700E8997A /* ShardsUITests.swift */; };
 		9019A0AE2739391700E8997A /* ShardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0AD2739391700E8997A /* ShardsUITestsLaunchTests.swift */; };
-		9019A0BF27393F8500E8997A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0BE27393F8500E8997A /* MapView.swift */; };
 		9019A0C127393FEE00E8997A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C027393FEE00E8997A /* HomeView.swift */; };
 		9019A0C327394F9600E8997A /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C227394F9600E8997A /* ContentModel.swift */; };
 		9019A0C827397F5D00E8997A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C727397F5D00E8997A /* OnBoardingView.swift */; };
 		9019A0CA27397F9400E8997A /* DeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019A0C927397F9400E8997A /* DeniedView.swift */; };
-		907B6554273C277100976961 /* MapView.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B6553273C277100976961 /* MapView.swift .swift */; };
+		907B6556273C27F700976961 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907B6555273C27F700976961 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +49,11 @@
 		9019A0A72739391700E8997A /* ShardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9019A0AB2739391700E8997A /* ShardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShardsUITests.swift; sourceTree = "<group>"; };
 		9019A0AD2739391700E8997A /* ShardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9019A0BE27393F8500E8997A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9019A0C027393FEE00E8997A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9019A0C227394F9600E8997A /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		9019A0C727397F5D00E8997A /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		9019A0C927397F9400E8997A /* DeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeniedView.swift; sourceTree = "<group>"; };
-		907B6553273C277100976961 /* MapView.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapView.swift .swift"; sourceTree = "<group>"; };
+		907B6555273C27F700976961 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 			children = (
 				9019A0902739391700E8997A /* ShardsApp.swift */,
 				9019A0BA2739395D00E8997A /* Views */,
-				9019A0BE27393F8500E8997A /* MapView.swift */,
 				9019A0BD2739399B00E8997A /* ViewModels */,
 				907B6552273C274600976961 /* Map */,
 				9019A0BC2739397C00E8997A /* Models */,
@@ -196,7 +193,7 @@
 		907B6552273C274600976961 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				907B6553273C277100976961 /* MapView.swift .swift */,
+				907B6555273C27F700976961 /* MapView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -332,12 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9019A0932739391700E8997A /* LaunchView.swift in Sources */,
+				907B6556273C27F700976961 /* MapView.swift in Sources */,
 				9019A0C127393FEE00E8997A /* HomeView.swift in Sources */,
 				9019A0CA27397F9400E8997A /* DeniedView.swift in Sources */,
-				907B6554273C277100976961 /* MapView.swift .swift in Sources */,
 				9019A0C327394F9600E8997A /* ContentModel.swift in Sources */,
 				9019A0C827397F5D00E8997A /* OnBoardingView.swift in Sources */,
-				9019A0BF27393F8500E8997A /* MapView.swift in Sources */,
 				9019A0912739391700E8997A /* ShardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
