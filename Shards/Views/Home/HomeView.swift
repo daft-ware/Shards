@@ -105,7 +105,7 @@ struct HomeView: View {
                                 }
                             }
                 }).sheet(isPresented: $showingMapView) {
-                        MapView()}
+                    MapView().ignoresSafeArea()}
                 .frame(width: screenSize.width / 1.07, height: screenSize.width / 6)
             }
         }.navigationBarBackButtonHidden(true)

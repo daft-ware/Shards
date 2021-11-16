@@ -10,6 +10,14 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     
+    @EnvironmentObject var model: ContentModel
+    /*
+    var location: [MKAnnotation] {
+        
+        var annotaitons = [MKAnnotation]()
+        
+    }
+    */
     func makeUIView(context: Context) -> MKMapView {
         
         let mapView = MKMapView()
@@ -24,6 +32,12 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: MKMapView, context: Context) {
+        
+        uiView.removeAnnotations(uiView.annotations)
+        
+        //uiView.addAnnotations()
+        
+        
         
     }
     
